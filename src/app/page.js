@@ -4,6 +4,7 @@ import Hired from "./components/Hired";
 import WhyChoose from "./components/WhyChoose";
 import JobMatching from "./components/JobMatching";
 import Mentoring from "./components/Mentoring";
+import Features from "./components/Features";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
     <WhyChoose></WhyChoose>
     <JobMatching></JobMatching>
     <Mentoring></Mentoring>
+    <Features></Features>
     </div>
   );
 }
