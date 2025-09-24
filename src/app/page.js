@@ -10,6 +10,7 @@ import FrequentilyAsk from "./components/FrequentilyAsk";
 import Technology from "./components/Technology";
 import HowWork from "./components/HowWork";
 import JobSeeker from "./components/JobSeeker";
+import JobPlacement from "./components/JobPlacement";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
     <Technology></Technology>
     <HowWork></HowWork>
     <JobSeeker></JobSeeker>
+    <JobPlacement></JobPlacement>
     <FrequentilyAsk></FrequentilyAsk>
     </div>
   );
