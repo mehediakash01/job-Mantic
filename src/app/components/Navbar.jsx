@@ -1,51 +1,94 @@
-
-"use client"
-import Link from 'next/link';
-import React from 'react';
+"use client";
+import Link from "next/link";
+import React from "react";
+import Container from "./Container";
 
 const Navbar = () => {
-    const navLinks = <>
-    <ul className='lg:flex items-center gap-4'>
-        <Link href={'/'}><p className='text-primary font-semibold'>AI Resume</p></Link>
-        <Link href={'/'}>AI Coverletter</Link>
-        <Link href={'/'}>Pricing</Link>
-        <Link href={'/'}>Career</Link>
-        <Link href={'/'}>Organization</Link>
-        <Link href={'/'}>Blog</Link>
-    </ul>
+  const navLinks = (
+    <>
+      <li>
+        <Link href="/" className="text-primary font-semibold">AI Resume</Link>
+      </li>
+      <li>
+        <Link href="/">AI Coverletter</Link>
+      </li>
+      <li>
+        <Link href="/">Pricing</Link>
+      </li>
+      <li>
+        <Link href="/">Career</Link>
+      </li>
+      <li>
+        <Link href="/">Organization</Link>
+      </li>
+      <li>
+        <Link href="/">Blog</Link>
+      </li>
     </>
-    return (
-        <div className="navbar bg-[#F9FBFF] lg:px-24 ">
-  <div className="navbar-start">
-    <div className="dropdown">
-      <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+  );
+
+  return (
+    <div className="bg-[#F9FBFF]">
+      <div className="drawer">
+        <input id="nav-drawer" type="checkbox" className="drawer-toggle" />
+        <div className="drawer-content">
+        
+          <Container className="flex items-center justify-between py-3">
+     
+            <div className="flex items-center gap-2">
+           
+              <label
+                htmlFor="nav-drawer"
+                className="btn btn-ghost lg:hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+
+       
+              <div className="text-2xl font-bold">
+                <span className="text-primary">Job</span>
+                mantic
+              </div>
+            </div>
+
+       
+            <div className="hidden lg:block">
+              <ul className="menu menu-horizontal gap-4">{navLinks}</ul>
+            </div>
+
+    
+            <div className="flex items-center gap-3">
+              <button className="font-bold">Login</button>
+              <button className="btn btn-secondary rounded-full text-white">
+                Sign up
+              </button>
+            </div>
+          </Container>
+        </div>
+
+   
+        <div className="drawer-side">
+          <label htmlFor="nav-drawer" className="drawer-overlay"></label>
+          <ul className="menu p-4 w-64 min-h-full bg-base-100">
+            {navLinks}
+          </ul>
+        </div>
       </div>
-      <ul
-        tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-       {
-        navLinks
-       }
-      </ul>
     </div>
-    <div className='flex items-center text-3xl font-bold'>
-        <span className='text-primary '>Job</span><h1 >mantic</h1>
-    </div>
-  </div>
-  <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
-         {
-        navLinks
-       }
-    </ul>
-  </div>
-  <div className="navbar-end flex items-center gap-3">
-   <button className='font-bold'>login</button>
-   <button className='btn btn-secondary rounded-full text-white'>sign up</button>
-  </div>
-</div>
-    );
+  );
 };
 
 export default Navbar;
