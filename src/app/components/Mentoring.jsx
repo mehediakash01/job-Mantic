@@ -4,7 +4,7 @@ import Container from "./Container";
 
 const Mentoring = () => {
   return (
-    <Container className=" my-20">
+    <Container className=" my-10 lg:my-20">
       <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
         <div className="space-y-4">
           <h1 className="font-bold text-2xl lg:text-4xl">Career Mentoring</h1>
