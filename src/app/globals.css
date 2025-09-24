@@ -6,4 +6,5 @@
   default: true;
   --color-primary: #23A2FC;
   --color-secondary: #000000;
+  --color-base: #F9FBFF;
 }
