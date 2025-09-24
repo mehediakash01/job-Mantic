@@ -11,6 +11,7 @@ import Technology from "./components/Technology";
 import HowWork from "./components/HowWork";
 import JobSeeker from "./components/JobSeeker";
 import JobPlacement from "./components/JobPlacement";
+import Pricing from "./components/Pricing";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
     <HowWork></HowWork>
     <JobSeeker></JobSeeker>
     <JobPlacement></JobPlacement>
+    <Pricing></Pricing>
     <FrequentilyAsk></FrequentilyAsk>
     </div>
   );
