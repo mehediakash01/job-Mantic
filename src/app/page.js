@@ -5,6 +5,7 @@ import WhyChoose from "./components/WhyChoose";
 import JobMatching from "./components/JobMatching";
 import Mentoring from "./components/Mentoring";
 import Features from "./components/Features";
+import ResumeBuilder from "./components/ResumeBuilder";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
     <JobMatching></JobMatching>
     <Mentoring></Mentoring>
     <Features></Features>
+    <ResumeBuilder></ResumeBuilder>
     </div>
   );
 }
