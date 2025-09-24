@@ -1,12 +1,13 @@
 import React from "react";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
+import Container from "./Container";
 
 const ResumeBuilder = () => {
   return (
-    <div className="max-w-5xl mx-auto my-20 px-4">
-      <div className="flex flex-col md:flex-row items-center gap-12 bg-gradient-to-r from-[#99DAF4]/50 to-[#ACA2EF]/50 rounded-bl-[80px] rounded-tr-[80px] p-8 md:p-5">
+    <Container className="my-10 lg:my-20 px-4">
+      <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-12 bg-gradient-to-r from-[#99DAF4]/50 to-[#ACA2EF]/50 rounded-bl-[80px] rounded-tr-[80px] p-8 md:p-5">
         <div className="space-y-4 px-4 md:px-12 text-center md:text-left">
-          <h1 className="font-bold text-4xl">AI Resume Builder</h1>
+          <h1 className="font-bold text-2xl lg:text-4xl">AI Resume Builder</h1>
           <p className="text-gray-700">
             Create ATS-Optimized Resumes That Get Results <br />
             Build professional, ATS-friendly resumes that pass automated <br />
@@ -24,7 +25,7 @@ const ResumeBuilder = () => {
           <img className="absolute -mt-48 w-[20px]" src="/images/star.png" alt="" />
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 
