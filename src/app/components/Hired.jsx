@@ -1,10 +1,11 @@
 import React from 'react';
+import Container from './Container';
 
 const Hired = () => {
     return (
-        <div className="bg-[#F9FBFF]">
+        <div className="bg-[#F9FBFF] my-16">
             <h1 className='font-bold text-3xl text-center'>You are <span className='text-primary'>90% more likely</span> to get hired if you use AIApply</h1>
-            <div className='w-11/12 mx-auto flex items-center justify-center my-16 gap-20 text-center'>
+            <Container className=' flex items-center flex-col lg:flex-row justify-center my-16 lg:gap-20 gap-10 text-center'>
                 <div className='space-y-2' >
                     <img className='w-auto mx-auto' src="/images/Vector (1).png" alt="" />
                     <h1 className='font-bold text-3xl'>9.1/10</h1>
@@ -20,7 +21,7 @@ const Hired = () => {
                     <h1 className='font-bold text-3xl'>10 million</h1>
                     <p>Jobs our AI is trained on</p>
                     </div>
-            </div>
+            </Container>
         </div>
     );
 };
