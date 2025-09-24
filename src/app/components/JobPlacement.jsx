@@ -1,9 +1,10 @@
 import React from 'react';
+import Container from './Container';
 
 const JobPlacement = () => {
     return (
-        <div className='w-11/12 mx-auto'>
-               <div className=' '> <h1 className='font-bold text-4xl '>Comprehensive ai-powered <br /> job placement suite</h1> <img src="/images/line.png" alt="" /> </div>
+        <Container >
+               <div className=' '> <h1 className='font-bold text-2xl lg:text-4xl '>Comprehensive ai-powered <br /> job placement suite</h1> <img src="/images/line.png" alt="" /> </div>
                  <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-6 gap-3'>
                 <div className='bg-[#ECF7FF] rounded-lg space-y-2 p-4 text-center'>
                    <img className='w-fit mx-auto' src="/images/writter.png" alt="" />
@@ -36,7 +37,7 @@ const JobPlacement = () => {
                     <p>AI-powered practice sessions with <br /> role-specific questions, personalized <br /> feedback, and confidence-building <br /> exercises.s</p>
                 </div>
             </div>
-        </div>
+        </Container>
     );
 };
 

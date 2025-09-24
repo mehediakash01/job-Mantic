@@ -1,5 +1,6 @@
 // components/Testimonials.js
 import Image from "next/image";
+import Container from "./Container";
 
 const testimonials = [
   {
@@ -24,10 +25,10 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4">
-        {/* Top mini testimonial */}
-        <div className="mb-16 text-center max-w-lg mx-auto">
+    <section className="py-10 lg:py-20 bg-gray-50">
+      <Container className="px-4">
+        
+        <div className="mb-16 max-w-lg mx-auto text-center ">
           <p className="text-gray-700 text-sm">
             AIApply transformed my job search! ... I started <br />
             getting 3x more interview invites within weeks.
@@ -46,7 +47,7 @@ export default function Testimonials() {
           </div>
         </div>
 
-        {/* Section Title */}
+    
         <h2 className="text-2xl font-bold">VOICE FROM THE WORLD</h2>
         <p className="text-gray-500 mt-2 mb-12">
           What our users say after using Jobmanttic and how it helped them <br />
@@ -54,11 +55,11 @@ export default function Testimonials() {
         </p>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {/* Left side image cluster + names */}
+        
           <div className="relative flex flex-col items-start">
-            {/* floating clustered images */}
+     
             <div className="relative w-40 h-40 mx-auto">
-              {/* top-left */}
+          
               <Image
                 src="/images/user (1).png"
                 alt="Top Left"
@@ -66,7 +67,7 @@ export default function Testimonials() {
                 height={40}
                 className="rounded-lg absolute top-0 left-0"
               />
-              {/* top-right */}
+        
               <Image
                 src="/images/user (2).png"
                 alt="Top Right"
@@ -74,7 +75,7 @@ export default function Testimonials() {
                 height={40}
                 className="rounded-lg absolute top-0 right-0"
               />
-              {/* center big */}
+       
               <Image
                 src="/images/user.png"
                 alt="Center"
@@ -82,7 +83,7 @@ export default function Testimonials() {
                 height={80}
                 className="rounded-lg absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
               />
-              {/* bottom-left */}
+           
               <Image
                 src="/images/user (2).png"
                 alt="Bottom Left"
@@ -90,7 +91,7 @@ export default function Testimonials() {
                 height={40}
                 className="rounded-lg absolute bottom-0 left-0"
               />
-              {/* bottom-right */}
+            
               <Image
                 src="/images/user (1).png"
                 alt="Bottom Right"
@@ -100,7 +101,7 @@ export default function Testimonials() {
               />
             </div>
 
-            {/* name list */}
+        
             <div className="mt-8 text-sm text-gray-700 space-y-2">
               <p>
                 <span className="font-semibold">Michelle V.</span> · Sr. Digital
@@ -123,7 +124,7 @@ export default function Testimonials() {
             </div>
           </div>
 
-          {/* Right side testimonials */}
+          
           <div className="md:col-span-2 space-y-6">
             {testimonials.map((item, idx) => (
               <div
@@ -133,7 +134,7 @@ export default function Testimonials() {
                 }`}
               >
                 <div className="flex items-start mb-4">
-                  {/* use quotes.png instead of “ ” */}
+                
                   <Image
                     src="/images/quotes.png"
                     alt="Quote"
@@ -160,11 +161,11 @@ export default function Testimonials() {
           </div>
         </div>
 
-        {/* Load more */}
+      
         <div className="mt-8 text-center">
           <button className="text-gray-600 hover:underline">Load more ↓</button>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

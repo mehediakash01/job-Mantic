@@ -1,9 +1,10 @@
 import React from "react";
+import Container from "./Container";
 
 const FrequentilyAsk = () => {
   return (
-    <div className="w-11/12 max-w-5xl mx-auto my-20 text-center">
-      <h1 className="text-5xl font-bold mb-8">
+    <Container className="my-10 lg:my-20 text-center">
+      <h1 className="text-2xl lg:text-5xl font-bold mb-8">
         Frequently <br /> Asked Questions
       </h1>
 
@@ -50,7 +51,7 @@ const FrequentilyAsk = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

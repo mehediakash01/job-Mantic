@@ -1,9 +1,10 @@
 import React from "react";
+import Container from "./Container";
 
 const Pricing = () => {
   return (
-    <div className="w-11/12 mx-auto py-12">
-      <h1 className="text-5xl font-bold text-center mb-12">Pricing</h1>
+    <Container className=" py-12">
+      <h1 className=" text-2xl lg:text-5xl font-bold text-center mb-12">Pricing</h1>
 
       <div className="flex justify-center items-center mb-12 gap-3 relative">
         <h1 className="font-bold bg-primary rounded-full px-4 py-2 text-white">
@@ -18,7 +19,7 @@ const Pricing = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
-        {/* Free Card */}
+       
         <div className="card w-full h-fit max-w-sm bg-base-100 shadow-sm rounded-lg">
           <div className="card-body">
             <div className="space-y-4">
@@ -106,7 +107,6 @@ const Pricing = () => {
           </div>
         </div>
 
-        {/* Pro Card */}
         <div className="card w-full max-w-sm bg-base-100 shadow-sm rounded-lg relative border border-primary">
           <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-semibold px-3 py-1 rounded-full shadow">
             Most Popular
@@ -383,7 +383,7 @@ const Pricing = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

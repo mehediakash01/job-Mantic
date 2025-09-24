@@ -1,13 +1,14 @@
 import React from 'react';
 import { TiTick } from 'react-icons/ti';
+import Container from './Container';
 
 const Technology = () => {
   return (
-    <div className="w-11/12 max-w-6xl mx-auto my-20">
-      {/* Section Header */}
-    <div className=' '> <h1 className='font-bold text-4xl'>Revolutionary AI Resume <br /> Building Technology</h1> <img src="/images/line.png" alt="" /> </div>
+    <Container className="my-10 lg:my-20">
+     
+    <div> <h1 className='font-bold text-2xl lg:text-4xl'>Revolutionary AI Resume <br /> Building Technology</h1> <img src="/images/line.png" alt="" /> </div>
 
-      {/* 1. Smart Content Generation */}
+ 
       <div className="flex flex-col md:flex-row items-center gap-10 mb-20">
         <div className="md:w-1/2 space-y-4">
           <h1 className="font-semibold text-3xl md:text-4xl">
@@ -42,7 +43,6 @@ const Technology = () => {
         </div>
       </div>
 
-      {/* 2. ATS Optimization Engine */}
       <div className="flex flex-col-reverse md:flex-row items-center gap-10 mb-20">
         <div className="md:w-1/2 flex justify-center">
           <img
@@ -77,7 +77,7 @@ const Technology = () => {
         </div>
       </div>
 
-      {/* 3. Multi-Version Resume Management */}
+      
       <div className="flex flex-col md:flex-row items-center gap-10">
         <div className="md:w-1/2 space-y-4">
           <h1 className="font-semibold text-3xl md:text-4xl">
@@ -111,7 +111,7 @@ const Technology = () => {
           />
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 
