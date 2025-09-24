@@ -12,6 +12,7 @@ import HowWork from "./components/HowWork";
 import JobSeeker from "./components/JobSeeker";
 import JobPlacement from "./components/JobPlacement";
 import Pricing from "./components/Pricing";
+import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
     <JobSeeker></JobSeeker>
     <JobPlacement></JobPlacement>
     <Pricing></Pricing>
+    <Testimonials></Testimonials>
     <FrequentilyAsk></FrequentilyAsk>
     </div>
   );
