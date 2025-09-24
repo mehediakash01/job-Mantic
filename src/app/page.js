@@ -7,6 +7,7 @@ import Mentoring from "./components/Mentoring";
 import Features from "./components/Features";
 import ResumeBuilder from "./components/ResumeBuilder";
 import FrequentilyAsk from "./components/FrequentilyAsk";
+import Technology from "./components/Technology";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
     <Mentoring></Mentoring>
     <Features></Features>
     <ResumeBuilder></ResumeBuilder>
+    <Technology></Technology>
     <FrequentilyAsk></FrequentilyAsk>
     </div>
   );
