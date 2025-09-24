@@ -6,6 +6,7 @@ import JobMatching from "./components/JobMatching";
 import Mentoring from "./components/Mentoring";
 import Features from "./components/Features";
 import ResumeBuilder from "./components/ResumeBuilder";
+import FrequentilyAsk from "./components/FrequentilyAsk";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
     <Mentoring></Mentoring>
     <Features></Features>
     <ResumeBuilder></ResumeBuilder>
+    <FrequentilyAsk></FrequentilyAsk>
     </div>
   );
 }
