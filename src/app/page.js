@@ -9,6 +9,7 @@ import ResumeBuilder from "./components/ResumeBuilder";
 import FrequentilyAsk from "./components/FrequentilyAsk";
 import Technology from "./components/Technology";
 import HowWork from "./components/HowWork";
+import JobSeeker from "./components/JobSeeker";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
     <ResumeBuilder></ResumeBuilder>
     <Technology></Technology>
     <HowWork></HowWork>
+    <JobSeeker></JobSeeker>
     <FrequentilyAsk></FrequentilyAsk>
     </div>
   );
