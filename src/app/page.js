@@ -8,6 +8,7 @@ import Features from "./components/Features";
 import ResumeBuilder from "./components/ResumeBuilder";
 import FrequentilyAsk from "./components/FrequentilyAsk";
 import Technology from "./components/Technology";
+import HowWork from "./components/HowWork";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
     <Features></Features>
     <ResumeBuilder></ResumeBuilder>
     <Technology></Technology>
+    <HowWork></HowWork>
     <FrequentilyAsk></FrequentilyAsk>
     </div>
   );
